@@ -22,6 +22,7 @@ export class ContactComponent {
     if (form.valid) {
       this.emailService.sendEmail(this.email).subscribe({
         next: () => {
+          console.log('Email sent successfully');
           this.notification.success('Nachricht erfolgreich gesendet');
         },
         error: error => {
