@@ -1,6 +1,5 @@
 header {
     background-color: #333;
-    color: white;
     padding: 1rem;
 }
 
@@ -8,10 +7,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 10vh;
+    background-color: rgba(240, 248, 255, 0.637);
+    color: rgb(33, 0, 56);
 }
 
-.logo {
-    font-size: 1.5rem;
+.fit-img{
+    width: 10%;
+    height: auto; /* Maintain aspect ratio */
 }
 
 ul {
@@ -21,14 +24,80 @@ ul {
 
 li {
     margin: 0 1rem;
+    width: fit-content;
 }
 
 a {
-    color: white;
     text-decoration: none;
+    color: rgb(33, 0, 56);
+    font-family: 'Inconsolata', monospace;
+    font-weight: 1000;
+    font-size: 120%;
+    transition: font-size 0.3s ease-in-out;
 }
 
 a:hover {
-    text-decoration: underline;
+    font-size: 125%;
+    font-family: 'Inconsolata', monospace;
 }
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../../../assets/images/IMG_4541.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: zoomIn 1.5s ease-in-out 1.5s forwards;
+}
+  
+@keyframes zoomIn {
+    0% {
+      background-size: 100%; /* Start at the normal size */
+    }
+    100% {
+      background-size: 105%; /* End at the larger size */
+    }
+  }
+
+  .hoverable-text {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Remove default text underline */
+  }
+  
+  .hoverable-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out; /* Smooth transition for the width */
+  }
+  
+  .hoverable-text:hover::after {
+    width: 100%; /* Expand the width to 100% when hovered */
+  }
+
+  .arrow-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: absolute;
+    bottom: 10vh;
+    background-color: rgba(240, 248, 255, 0.386);
+    border-radius: 80px;
+    padding: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; /* Center the icon horizontally within the container */
+  }
+  
+  
+  .fa-arrow-down {
+    color: rgb(33, 0, 56);
+    font-size: 230%;
+  }
 

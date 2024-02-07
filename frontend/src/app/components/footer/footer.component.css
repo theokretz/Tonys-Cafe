@@ -1,0 +1,31 @@
+.container-fluid {
+    position: relative; /* Set container position to relative */
+    min-height: 100vh; /* Ensure container-fluid takes at least the full viewport height */
+    font-family: 'Inconsolata', monospace;
+    font-weight: 800;
+    background-image: url('../../../assets/images/4D9D61E2-6A1C-4744-A9A6-C7FCFE9FB572-Enhanced-NR.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-left: 2.7vw;
+    justify-content: center; /* Center horizontally */
+    font-family: 'Inconsolata', monospace;
+    background-color: rgba(40, 57, 57, 0.749);
+    border: 1px solid whitesmoke;
+    color: aliceblue;
+  }
+
+  a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  i{
+    font-size: 120%;
+    margin: 10px;
+  }
