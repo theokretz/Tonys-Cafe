@@ -1,13 +1,40 @@
 <form #form="ngForm" (ngSubmit)="onSubmit(form)">
     <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="email.name" name ="name" placeholder="Enter name">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="email.name" name ="name"  #name="ngModel" placeholder="Enter name" required>
+                <div
+                        *ngIf="name.invalid && (name.dirty || name.touched || form.submitted)"
+                        class="alert"
+                >
+                <div *ngIf="name.errors?.['required']">Bitte geben Sie Ihren Namen an.</div>
+                </div>
+            <label for="email">E-Mail Adresse</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="email.email" name="email"  #emailAddress="ngModel" placeholder="Enter email" required>
+            <div
+                    *ngIf="emailAddress.invalid && (emailAddress.dirty || emailAddress.touched || form.submitted)"
+                    class="alert"
+            >
+                <div *ngIf="emailAddress.errors?.['required']">Bitte geben Sie Ihre E-Mail an.</div>
+            </div>
+        </div>
+        <div>
+            <label for="nachricht">Nachricht</label>
+            <textarea class="form-control" id="nachricht" [(ngModel)]="email.message" name ="message"  #nachricht="ngModel" rows="3" required></textarea>
+            <div
+                    *ngIf="nachricht.invalid && (nachricht.dirty || nachricht.touched || form.submitted)"
+                    class="alert"
+            >
+                <div *ngIf="nachricht.errors?.['required']">Bitte geben Sie Ihre Nachricht an.</div>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="datenschutz" name="datenschutz" required />
+            <label for="datenschutz">Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage erhoben
+                und verarbeitet werden. Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an <a href="mailto:office@cafe-tonys.at">Tony's Cafe</a> widerrufen.
+                Detaillierte Informationen zum Umgang mit Nutzerdaten finden Sie in unserer Datenschutzerklärung.</label>
+        </div>
 
-        <label for="email">Email Adresse</label>
-        <input type="email" class="form-control" id="email" [(ngModel)]="email.email" name="email" placeholder="Enter email">
-
-        <label for="nachricht">Nachricht</label>
-        <textarea class="form-control" id="nachricht" [(ngModel)]="email.message" name ="message" rows="3"></textarea>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Senden</button>
     </div>
 </form>

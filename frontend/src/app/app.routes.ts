@@ -6,8 +6,7 @@ import {GalleryComponent} from "./components/gallery/gallery.component";
 import {MenuComponent} from "./components/menu/menu.component";
 
 export const routes: Routes = [
-    {path: '', component: HomeComponent,
-         title: 'Tony\'s Cafe'},
+    {path: '', component: HomeComponent, title: 'Tony\'s Cafe'},
     {path: 'galerie', component: GalleryComponent, title: 'Galerie'},
     {path: 'kontakt', component: ContactComponent,title: 'Kontakt'},
     {path: 'überuns', component: AboutusComponent, title: 'Über uns'},

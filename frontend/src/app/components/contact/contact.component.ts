@@ -4,6 +4,7 @@ import {Email} from "../../dtos/email";
 import {EmailService} from "../../services/email.service";
 import {ToastrModule, ToastrService} from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
+import {NgIf} from "@angular/common";
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -11,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
     ToastrModule,
+    NgIf,
   ],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
