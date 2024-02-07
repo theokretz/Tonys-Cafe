@@ -12,6 +12,9 @@ nav {
     color: rgb(33, 0, 56);
 }
 
+.nav-link {
+    white-space: nowrap;
+}
 .fit-img{
     width: 10%;
     height: auto; /* Maintain aspect ratio */
