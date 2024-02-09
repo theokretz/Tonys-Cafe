@@ -70,7 +70,7 @@
           },
           "defaultConfiguration": "development",
             "options": {
-                "browserTarget": "frontend:build"
+                "buildTarget": "frontend:build"
             }
         },
         "extract-i18n": {
