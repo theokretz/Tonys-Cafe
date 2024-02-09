@@ -32,6 +32,6 @@ public class KontaktEndpoint {
     @CrossOrigin(origins = "http://localhost:4200")
     public void sendEmail(@RequestBody EmailDto emailDto) {
         LOGGER.info("POST /api/v1/kontakt/email: send email");
-        sendEmail(emailDto);
+        mailService.sendEmail(emailDto);
     }
 }

@@ -17,5 +17,6 @@ export const appConfig: ApplicationConfig = {
       tapToDismiss: false,
     })),
       importProvidersFrom(BrowserAnimationsModule),
+      importProvidersFrom(ToastrService),
   ]
 };
