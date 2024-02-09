@@ -1,0 +1,62 @@
+
+<div class="container-fluid" style="height: 100vh;font-weight: 500; width: 99vw; margin:0px;padding:0px; overflow: hidden; font-family: 'Inconsolata', monospace;">
+    
+    <div class="row" style="margin: 0px;padding:0px;">
+    <div class="col-lg-6 bg-holder" style="margin:0px;height: 100vh; background-image: url('../../assets/images/02FAA25F-1428-487F-A419-26312B7B66CE-Enhanced-NR.jpg'); background-size: cover;
+    background-position-x: center;">
+       
+        <div class="link-holder col-lg-3" style=" margin: auto; margin-top: 40vh;width: 70%;text-align: center; background-color:white; padding: 2vw;">
+           
+            <p style="font-size: 170%; letter-spacing: 4px;">
+                UNSERE HERZLICHEN SPEISEN
+            </p>
+
+            <a class="logo-holder" href = "/speisekarte" style="margin:auto;width: 10vw;height: 20vh; text-decoration:none; color: black;">  
+            
+            <div class="col-lg-2; margin:auto"> 
+            <div class="logo-holder"
+            [style.background-color]="backgroundColor"
+            [style.color]="fontColot"
+            (mouseenter)="onMouseEnter()"
+            (mouseleave)="onMouseLeave()"
+             style="width: 12vw;padding:1.5vh; margin:auto;padding-bottom:0vh; font-size: 110%; border: 1px solid black;" >
+              <p >ZUR SPEISEKARTE</p>
+            </div>
+            </div>
+    
+          </a>
+
+        </div>
+    </div>
+    <div class="col-lg-6 bg-holder" style="height: 100vh; background-image: url('../../assets/images/25B2EF85-8131-48A2-9D7F-BB516F739C02.jpg'); background-size: cover;
+    background-position-x: center;">
+        <div class="link-holder col-lg-3" style=" margin: auto; margin-top: 40vh;width: 70%;text-align: center; background-color:white; padding: 2vw;">
+           
+            <p style="font-size: 170%; letter-spacing: 4px;">
+                UNSERE AESTETIK :3
+            </p>
+
+            <a class="logo-holder" href = "/galerie" style="margin:auto;width: 10vw;height: 20vh; text-decoration:none; color: black;">  
+            
+            <div class="col-lg-2; margin:auto"> 
+            <div class="logo-holder"
+            [style.background-color]="backgroundColortwo"
+            [style.color]="fontColottwo"
+            (mouseenter)="onMouseEntertwo()"
+            (mouseleave)="onMouseLeavetwo()"
+             style="width: 12vw;padding:1.5vh; margin:auto;padding-bottom:0vh; font-size: 110%; border: 1px solid black;" >
+              <p >ZUR GALERIE</p>
+            </div>
+            </div>
+    
+          </a>
+
+        </div>
+    </div>
+    </div>
+</div>
+
+<style>
+    .logo-holder{transition: background-color 0.3s ease;}
+</style>
+
