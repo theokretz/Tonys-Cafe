@@ -5,6 +5,7 @@ import { routes } from './app.routes';
 import {HttpClientModule} from "@angular/common/http";
 import {ToastrModule, ToastrService} from "ngx-toastr";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { LightgalleryModule } from 'lightgallery/angular'
 
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes),
@@ -18,5 +19,7 @@ export const appConfig: ApplicationConfig = {
     })),
       importProvidersFrom(BrowserAnimationsModule),
       importProvidersFrom(ToastrService),
+      LightgalleryModule,
+      importProvidersFrom(LightgalleryModule),
   ]
 };
