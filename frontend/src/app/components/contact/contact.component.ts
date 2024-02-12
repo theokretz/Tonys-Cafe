@@ -20,6 +20,10 @@ import {NgIf} from "@angular/common";
 export class ContactComponent {
   email: Email = new Email();
   constructor(private emailService: EmailService,private notification: ToastrService) {}
+
+  ngOnInit() {
+    this.notification.info('Kontaktiere uns', 'Wir freuen uns auf deine Nachricht');
+  }
   onSubmit(form: NgForm) {
     if (form.valid) {
       this.emailService.sendEmail(this.email).subscribe({
