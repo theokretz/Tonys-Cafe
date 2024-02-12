@@ -3,7 +3,7 @@ import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import {HttpClientModule} from "@angular/common/http";
-import {ToastrModule, ToastrService} from "ngx-toastr";
+import {ToastrModule} from "ngx-toastr";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { LightgalleryModule } from 'lightgallery/angular'
 
@@ -16,10 +16,9 @@ export const appConfig: ApplicationConfig = {
       closeButton: true,
       progressBar: true,
       tapToDismiss: false,
+      positionClass: 'toast-top-right',
     })),
       importProvidersFrom(BrowserAnimationsModule),
-      importProvidersFrom(ToastrService),
-      LightgalleryModule,
       importProvidersFrom(LightgalleryModule),
   ]
 };

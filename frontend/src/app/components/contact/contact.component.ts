@@ -20,22 +20,25 @@ import {NgIf} from "@angular/common";
 export class ContactComponent {
   email: Email = new Email();
   constructor(private emailService: EmailService,private notification: ToastrService) {}
-
+  isLoading = false;
   ngOnInit() {
     this.notification.info('Kontaktiere uns', 'Wir freuen uns auf deine Nachricht');
   }
   onSubmit(form: NgForm) {
     if (form.valid) {
+      this.isLoading = true;
       this.emailService.sendEmail(this.email).subscribe({
         next: () => {
           console.log('Email sent successfully');
-          this.notification.success('Nachricht erfolgreich gesendet');
+          this.notification.success('Nachricht erfolgreich gesendet', 'Vielen Dank!');
           form.resetForm();
           this.email = new Email();
+          this.isLoading = false;
         },
         error: error => {
           console.error('Could not send email', error);
-          this.notification.error('Nachricht konnte nicht gesendet werden', error.error.errors);
+          this.notification.error('Versuchen Sie es später erneut', 'Nachricht konnte nicht gesendet werden', error.error.errors);
+          this.isLoading = false;
         }
       });
     }

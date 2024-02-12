@@ -49,12 +49,15 @@
                 <div *ngIf="datenschutz.errors?.['required']">Bitte akzeptieren Sie die Datenschutzerklärung.</div>
             </div>
 
-        <div class="senden">
+        <div class="senden" *ngIf="!isLoading">
             <button type="submit" class="btn btn-primary">Senden <i class="bi bi-send-fill"></i></button>
+        </div>
+        <div class="loader-container" *ngIf="isLoading">
+            <div  class="loader"></div>
         </div>
         <hr>
     </div>
 
-    <hr>
+
 </form>
 </div>
