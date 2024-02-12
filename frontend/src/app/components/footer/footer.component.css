@@ -9,11 +9,10 @@
   }
   
   .container {
-    position: absolute;
+    margin-top: 40vh;
+    position: relative;
     bottom: 0;
     text-align: center;
-    margin-left: 2.7vw;
-    justify-content: center; /* Center horizontally */
     font-family: 'Inconsolata', monospace;
     background-color: rgba(40, 57, 57, 0.749);
     border: 1px solid whitesmoke;
