@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   min-height: 70vh;
+
 }
 
 form {
@@ -18,12 +19,18 @@ form {
 }
 
 .headline {
-  margin-bottom: 3rem;
+
   display: flex;
-  justify-content: center; /* Zentriert horizontal */
+  justify-content: center;
   align-items: center;
 }
 
+.subline {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .form-first-row {
   display: flex;
