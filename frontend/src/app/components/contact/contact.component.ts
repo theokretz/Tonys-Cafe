@@ -26,6 +26,8 @@ export class ContactComponent {
         next: () => {
           console.log('Email sent successfully');
           this.notification.success('Nachricht erfolgreich gesendet');
+          form.resetForm();
+          this.email = new Email();
         },
         error: error => {
           console.error('Could not send email', error);
