@@ -34,7 +34,7 @@
                     *ngIf="nachricht.invalid && (nachricht.dirty || form.submitted)"
                     class="alert"
             >
-                <div *ngIf="nachricht.errors?.['required']">Bitte geben Sie Ihre Nachricht ein.{{environment.apiKey}}</div>
+                <div *ngIf="nachricht.errors?.['required']">Bitte geben Sie Ihre Nachricht ein.</div>
             </div>
         </div>
         <div class = "datencheck">
@@ -61,10 +61,11 @@
 </form>
     <div class="maps-container">
         <h2 class="headline">Oder kommen Sie einfach vorbei!</h2>
-        <p class="subline">Hier befindet sich Tony's Cafe.</p>
+        <p>Hier befindet sich Tony's Cafe.</p>
         <a href="https://www.google.at/maps/place/Tony's+Cafe/@48.3938992,15.5779265,17z/data=!4m15!1m8!3m7!1s0x477285e9a4d8d115:0xe8c08c773a402b7a!2sTony's+Cafe!8m2!3d48.3939205!4d15.5778556!10e5!16s%2Fg%2F11vdp3qk2l!3m5!1s0x477285e9a4d8d115:0xe8c08c773a402b7a!8m2!3d48.3939205!4d15.5778556!16s%2Fg%2F11vdp3qk2l?entry=ttu">
             <button class="btn btn-primary" id="route">Route <i class="bi bi-geo-alt-fill"></i></button>
         </a>
+        <div class="maps">
         <google-map height="500px"
                     width="900px"
                     [center]="center"
@@ -73,7 +74,7 @@
         >
             <map-marker [position]="marker.position"></map-marker>
         </google-map>
-
+        </div>
 
 
     </div>

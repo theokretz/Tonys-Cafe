@@ -154,3 +154,6 @@ hr {
 
 @keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}
 
+.maps {
+  margin-bottom: 1rem;
+}
