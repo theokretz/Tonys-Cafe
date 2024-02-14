@@ -1,9 +1,87 @@
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 45%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/*Formatierung für die Speisekarten*/
+.column_container {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 600;
+  margin-top: 10vh;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border: 1px solid black;
+}
+
+/*Formatierung für die Arten von Speisen/Getränken*/
+.headline_format {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 2vh;
+}
+
+/*Formatierung für die Speisen/Getränke*/
+.name_format {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 4vh;
+  font-family: 'Inconsolata', monospace;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+/*Formatierung für die Preise*/
+.price_format {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 4vh;
+  font-family: 'Inconsolata', monospace;
+  text-align: right;
+  font-weight: 600;
+  margin-right: 5%;
+}
+
+.name_food_format {
+  float: left;
+  width: 67.5%;
+  padding: 10px;
+  height: 4vh;
+  font-family: 'Inconsolata', monospace;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 2.5%;
+}
+
+.amount_food_format {
+  float: left;
+  width: 12.5%;
+  padding: 10px;
+  height: 4vh;
+  font-family: 'Inconsolata', monospace;
+  text-align: left;
+  font-weight: 600;
+}
+
+.price_food_format {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  height: 4vh;
+  font-family: 'Inconsolata', monospace;
+  text-align: right;
+  font-weight: 600;
+  margin-left: 1.75%;
 }
 
 /* Clear floats after the columns */
