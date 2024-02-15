@@ -38,7 +38,7 @@ export class ContactComponent {
     marker = {
         position: { lat:  48.39395386803803, lng: 15.577857720236125 },
         label: {
-            color: 'red',
+            color: 'black',
             text: 'Tony\'s Cafe',
         },
         title: 'Tony\'s Cafe',
