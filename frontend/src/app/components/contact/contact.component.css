@@ -45,6 +45,9 @@ form {
   align-items: center;
   width: 100%;
 }
+textarea {
+  resize: none;
+}
 
 
 /* Responsive Anpassung, falls die Felder auf kleineren Bildschirmen untereinander angezeigt werden sollen */

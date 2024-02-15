@@ -6,6 +6,7 @@ import {ToastrModule, ToastrService} from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
 import {NgIf} from "@angular/common";
 import {GoogleMap, MapMarker} from "@angular/google-maps";
+import {RouterLink} from "@angular/router";
 
 
 @Component({
@@ -18,6 +19,7 @@ import {GoogleMap, MapMarker} from "@angular/google-maps";
         NgIf,
         GoogleMap,
         MapMarker,
+        RouterLink,
     ],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']

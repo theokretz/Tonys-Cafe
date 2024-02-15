@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {NavigationEnd, Router, RouterOutlet} from '@angular/router';
 import {HeaderComponent} from "./components/header/header.component";
 import {FooterComponent} from "./components/footer/footer.component";
+import {filter} from "rxjs";
 
 
 @Component({
@@ -14,5 +15,13 @@ import {FooterComponent} from "./components/footer/footer.component";
 export class AppComponent {
   title = 'Tony\'s Cafe';
 
+  //routing to top of page for Datenschutzerklärung
+  constructor(private router: Router) {
+    this.router.events.pipe(
+        filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      window.scroll(0, 0);
+    });
+  }
 
 }
