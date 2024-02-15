@@ -41,6 +41,7 @@
             <input type="checkbox" id="datenschutz" name="datenschutz" ngModel #datenschutz="ngModel" required />
             <label for="datenschutz">Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage erhoben
                 und verarbeitet werden. Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an <a href="mailto:office@cafe-tonys.at">Tony's Cafe</a> widerrufen.
+                Details finden Sie hier.
             </label>
         </div>
             <div
@@ -62,7 +63,7 @@
     <div class="maps-container">
         <h2 class="headline">Oder kommen Sie einfach vorbei!</h2>
         <p>Hier befindet sich Tony's Cafe.</p>
-        <a href="https://www.google.at/maps/place/Tony's+Cafe/@48.3938992,15.5779265,17z/data=!4m15!1m8!3m7!1s0x477285e9a4d8d115:0xe8c08c773a402b7a!2sTony's+Cafe!8m2!3d48.3939205!4d15.5778556!10e5!16s%2Fg%2F11vdp3qk2l!3m5!1s0x477285e9a4d8d115:0xe8c08c773a402b7a!8m2!3d48.3939205!4d15.5778556!16s%2Fg%2F11vdp3qk2l?entry=ttu">
+        <a href="https://www.google.com/maps/search/?api=1&query=48.39395386803803%2C15.577857720236125&query_place_id=ChIJFdHYpOmFckcReitAOneMwOg">
             <button class="btn btn-primary" id="route">Route <i class="bi bi-geo-alt-fill"></i></button>
         </a>
         <div class="maps">
@@ -72,7 +73,14 @@
                     [zoom]="zoom"
                     (mapClick)="moveMap($event)"
         >
-            <map-marker [position]="marker.position"></map-marker>
+            <map-marker
+                    [position]="marker.position"
+                    [label]="marker.label"
+                    [options]="marker.options"
+                    [title]="marker.title"
+            >
+
+            </map-marker>
         </google-map>
         </div>
 

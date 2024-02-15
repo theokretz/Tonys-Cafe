@@ -8,6 +8,11 @@
   flex-direction: column;
 }
 
+h2, p, label, button {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 600;
+}
+
 form {
   width: 50%;
   display: flex;

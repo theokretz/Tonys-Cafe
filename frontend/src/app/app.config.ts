@@ -7,7 +7,7 @@ import {ToastrModule} from "ngx-toastr";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { LightgalleryModule } from 'lightgallery/angular'
 import { GoogleMapsModule  } from '@angular/google-maps';
-import { Loader } from "@googlemaps/js-api-loader"
+
 
 
 
@@ -25,6 +25,5 @@ export const appConfig: ApplicationConfig = {
       importProvidersFrom(BrowserAnimationsModule),
       importProvidersFrom(LightgalleryModule),
       importProvidersFrom(GoogleMapsModule),
-      importProvidersFrom(Loader),
   ]
 };

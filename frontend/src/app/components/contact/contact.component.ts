@@ -6,7 +6,6 @@ import {ToastrModule, ToastrService} from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
 import {NgIf} from "@angular/common";
 import {GoogleMap, MapMarker} from "@angular/google-maps";
-import {environment} from "../../../environment/environment";
 
 
 @Component({
@@ -38,6 +37,12 @@ export class ContactComponent {
     };
     marker = {
         position: { lat:  48.39395386803803, lng: 15.577857720236125 },
+        label: {
+            color: 'red',
+            text: 'Tony\'s Cafe',
+        },
+        title: 'Tony\'s Cafe',
+        options: { animation: google.maps.Animation.DROP },
     }
     zoom = 16;
 
@@ -66,5 +71,5 @@ export class ContactComponent {
     }
   }
 
-    protected readonly environment = environment;
+
 }
