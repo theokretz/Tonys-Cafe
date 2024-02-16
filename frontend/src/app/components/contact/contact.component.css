@@ -48,7 +48,10 @@ form {
 textarea {
   resize: none;
 }
-
+.maps google-map {
+  height: 500px;
+  width: 900px;
+}
 
 /* Responsive Anpassung, falls die Felder auf kleineren Bildschirmen untereinander angezeigt werden sollen */
 @media (max-width: 768px) {
@@ -59,10 +62,7 @@ textarea {
     align-items: flex-start;
     width: 100%;
   }
-  .datencheck {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+
 
   .datencheck label {
     margin-left: 0;
@@ -74,7 +74,13 @@ textarea {
     width: 90%;
   }
 
-
+  p {
+    text-align: center;
+  }
+  .maps google-map {
+    height: 300px; /* Kleinere Höhe für kleine Bildschirme */
+    width: 90%; /* Passt sich der Breite des Containers an */
+  }
 }
 
 .alert {
