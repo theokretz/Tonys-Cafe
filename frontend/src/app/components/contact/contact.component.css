@@ -67,6 +67,14 @@ textarea {
   .datencheck label {
     margin-left: 0;
   }
+  form {
+    width: 90%;
+  }
+  .maps, google-map {
+    width: 90%;
+  }
+
+
 }
 
 .alert {
@@ -164,4 +172,6 @@ hr {
 
 .maps {
   margin-bottom: 1rem;
+
 }
+
