@@ -10,6 +10,7 @@
   
   .container {
     margin-top: 40vh;
+    width: 80vw;
     position: relative;
     bottom: 0;
     text-align: center;
@@ -19,6 +20,14 @@
     color: aliceblue;
   }
 
+  td{
+    color: aliceblue;
+    background-color: rgba(40, 57, 57, 0.7);
+    font-weight: 500;
+  }
+
+  table{background-color: rgba(40, 57, 57, 0.749);}
+
   a{
     text-decoration: none;
     color: aliceblue;
@@ -27,4 +36,11 @@
   i{
     font-size: 120%;
     margin: 10px;
+  }
+
+  @media (max-width : 992px) {
+    .container{
+      margin-top: 12vh;
+      width: 90vw;
+    }
   }

@@ -1,6 +1,8 @@
 header {
     background-color: #333;
     padding: 1rem;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 nav {
@@ -11,6 +13,16 @@ nav {
     background-color: rgba(240, 248, 255, 0.637);
     color: rgb(33, 0, 56);
 }
+
+/* Updated CSS */
+.navbar-header {
+  order: -1;
+}
+
+.navbar-toggler {
+  order: 0;
+}
+
 
 .nav-link {
     white-space: nowrap;
@@ -51,7 +63,6 @@ a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: zoomIn 1.5s ease-in-out 1.5s forwards;
 }
   
 @keyframes zoomIn {
@@ -88,8 +99,9 @@ a:hover {
     display: flex; /* Use flexbox */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    position: absolute;
-    bottom: 10vh;
+    position: relative;
+    width: fit-content;
+    margin-top: 80vh;
     background-color: rgba(240, 248, 255, 0.386);
     border-radius: 80px;
     padding: 30px;
@@ -103,4 +115,35 @@ a:hover {
     color: rgb(33, 0, 56);
     font-size: 230%;
   }
+
+  /* Updated CSS */
+.navbar-brand {
+  margin-right: auto; /* Pushes the logo to the left as much as possible */
+}
+
+/* Updated CSS */
+.navbar-brand {
+  margin-right: auto; /* Pushes the logo to the left as much as possible */
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+      background-color: rgba(255, 255, 255, 0.7); /* Set background color for collapsed navbar in mobile size */
+      top: 10vh;
+  }
+
+  .arrow-container {
+    position: relative;
+    width: fit-content;
+    margin-top: 90vh;
+    margin-bottom: 30px; /* Add margin bottom to separate from navbar */
+}
+
+.fit-img{
+  width: 20%;
+  height: auto; /* Maintain aspect ratio */
+}
+}
+
+
 
