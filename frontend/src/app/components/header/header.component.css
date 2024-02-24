@@ -1,6 +1,5 @@
 header {
     background-color: #333;
-    padding: 1rem;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -10,6 +9,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    width: 99vw;
     background-color: rgba(240, 248, 255, 0.637);
     color: rgb(33, 0, 56);
 }
@@ -17,10 +17,15 @@ nav {
 /* Updated CSS */
 .navbar-header {
   order: -1;
+  width: 100vw;
 }
 
+
 .navbar-toggler {
-  order: 0;
+  order: 1;
+  opacity: 100%;
+  color: aliceblue;
+  z-index: 9999; /* Set a high z-index value */
 }
 
 
@@ -95,27 +100,6 @@ a:hover {
     width: 100%; /* Expand the width to 100% when hovered */
   }
 
-  .arrow-container {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    position: relative;
-    width: fit-content;
-    margin-top: 80vh;
-    background-color: rgba(240, 248, 255, 0.386);
-    border-radius: 80px;
-    padding: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center; /* Center the icon horizontally within the container */
-  }
-  
-  
-  .fa-arrow-down {
-    color: rgb(33, 0, 56);
-    font-size: 230%;
-  }
-
   /* Updated CSS */
 .navbar-brand {
   margin-right: auto; /* Pushes the logo to the left as much as possible */
@@ -135,13 +119,16 @@ a:hover {
   .arrow-container {
     position: relative;
     width: fit-content;
-    margin-top: 90vh;
     margin-bottom: 30px; /* Add margin bottom to separate from navbar */
 }
 
 .fit-img{
   width: 20%;
   height: auto; /* Maintain aspect ratio */
+}
+
+nav{
+  width: 100vw;
 }
 }
 
