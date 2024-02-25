@@ -90,3 +90,9 @@
   display: table;
   clear: both;
 }
+
+@media (max-width : 992px){
+  .column_container{
+    width: 93%;
+  }
+}
