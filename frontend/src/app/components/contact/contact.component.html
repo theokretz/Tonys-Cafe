@@ -41,7 +41,7 @@
             <input type="checkbox" id="datenschutz" name="datenschutz" ngModel #datenschutz="ngModel" required />
             <label for="datenschutz">Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage erhoben
                 und verarbeitet werden. Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an <a href="mailto:office@cafe-tonys.at">Tony's Cafe</a> widerrufen.
-                Details finden Sie hier.
+                Details finden Sie <a [routerLink]="['/datenschutz']">hier</a>.
             </label>
         </div>
             <div

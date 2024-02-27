@@ -1,5 +1,5 @@
 import {ApplicationConfig, importProvidersFrom} from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, RouterModule} from '@angular/router';
 
 import { routes } from './app.routes';
 import {HttpClientModule} from "@angular/common/http";
@@ -10,9 +10,9 @@ import { GoogleMapsModule  } from '@angular/google-maps';
 
 
 
-
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes),
+    importProvidersFrom(RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})),
     importProvidersFrom(HttpClientModule),
     importProvidersFrom(ToastrModule.forRoot({
       timeOut: 3000,
