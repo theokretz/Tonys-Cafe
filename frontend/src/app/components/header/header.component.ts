@@ -1,28 +1,13 @@
-import { Component,ElementRef } from '@angular/core';
+import { Component} from '@angular/core';
+import { ScrollButtonComponent } from '../../scroll-button/scroll-button.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [ScrollButtonComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  constructor(private elRef: ElementRef) {}
 
-  moveScreenDown() {
-    // Get the native DOM element
-    const nativeElement = this.elRef.nativeElement;
-
-    // Calculate the new scroll position
-    const currentScrollPosition = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const newPosition = currentScrollPosition + windowHeight;
-
-    // Animate scrolling to the new position
-    window.scrollTo({
-      top: newPosition,
-      behavior: 'smooth'
-    });
-  }
 }
