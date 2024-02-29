@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GalleryLinksComponent } from '../../gallery-links/gallery-links.component';
+import { GalleryLinksComponent } from '../gallery-links/gallery-links.component';
 
 @Component({
   selector: 'app-home',

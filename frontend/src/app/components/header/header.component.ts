@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { ScrollButtonComponent } from '../../scroll-button/scroll-button.component';
+import { ScrollButtonComponent } from '../scroll-button/scroll-button.component';
 
 @Component({
   selector: 'app-header',

@@ -1,0 +1,58 @@
+
+<div class="container-fluid">
+    
+    <div class="row" style="margin: 0px;padding:0px;">
+    <div class="col-lg-6 col-sm-12 col-md-12 bg-holder first-bg">
+       
+        <div class="link-holder col-lg-3 col-md-12 col-sm-12">
+           
+            <p style="font-size: 170%; letter-spacing: 4px;">
+                MEHR ÜBER UNS
+            </p>
+
+            <a class="logo-holder logo-block" href = "/überuns">
+            
+            <div class="col-lg-2; margin:auto"> 
+            <div class="logo-holder leges"
+            [style.background-color]="backgroundColor"
+            [style.color]="fontColot"
+            (mouseenter)="onMouseEnter()"
+            (mouseleave)="onMouseLeave()" >
+              <p >ÜBER UNS</p>
+            </div>
+            </div>
+
+          </a>
+
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 bg-holder col-md-12 col-sm-12 second-bg">
+        <div class="link-holder col-lg-3 col-md-12 col-sm-12">
+           
+            <p style="font-size: 170%; letter-spacing: 4px;">
+                UNSERE GALERIE
+            </p>
+
+            <a class="logo-holder logo-block" href = "/galerie">  
+            
+            <div class="col-lg-2; margin:auto"> 
+            <div class="logo-holder leges"
+            [style.background-color]="backgroundColortwo"
+            [style.color]="fontColottwo"
+            (mouseenter)="onMouseEntertwo()"
+            (mouseleave)="onMouseLeavetwo()">
+              <p >ZUR GALERIE</p>
+            </div>
+            </div>
+
+          </a>
+
+        </div>
+    </div>
+    </div>
+</div>
+
+<style>
+    .logo-holder{transition: background-color 0.3s ease;}
+</style>
+
