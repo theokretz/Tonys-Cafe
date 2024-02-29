@@ -5,6 +5,8 @@
   font-weight: 600;
   border: 1px solid black;
   margin-top: 10vh;
+  margin-bottom: 10vh;
+  overflow: auto
 }
 
 /*Formatierung für die Arten von Speisen/Getränken*/
@@ -39,6 +41,11 @@
   margin-right: 2.5%;
 }
 
+.name_format p{
+  letter-spacing: 2px;
+  font-size: 150%
+}
+
 /*Formatierung für die Preise*/
 .price_format {
   float: left;
@@ -48,6 +55,11 @@
   text-align: right;
   font-weight: 600;
   margin-right: 5%;
+}
+
+.price_format p{
+  letter-spacing: 2px;
+  font-size: 150%
 }
 
 .name_food_format {
@@ -62,7 +74,22 @@
 
 .name_food_format p{
   letter-spacing: 2px;
-  font-size: 90%
+  font-size: 150%
+}
+
+.name_food_format_small {
+  float: left;
+  width: 67.5%;
+  height: max-content;
+  font-family: 'Inconsolata', monospace;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 2.5%;
+}
+
+.name_food_format_small p{
+  letter-spacing: 2px;
+  font-size: 100%
 }
 
 .amount_food_format {
@@ -76,7 +103,7 @@
 
 .amount_food_format p{
   letter-spacing: 2px;
-  font-size: 90%
+  font-size: 150%
 }
 
 .price_food_format {
@@ -91,7 +118,7 @@
 
 .price_food_format p{
   letter-spacing: 2px;
-  font-size: 90%
+  font-size: 150%
 }
 
 .body {
