@@ -5,6 +5,7 @@
   font-weight: 600;
   border: 1px solid black;
   margin-top: 10vh;
+  overflow: auto
 }
 
 /*Formatierung für die Arten von Speisen/Getränken*/
