@@ -41,7 +41,7 @@
 
 .name_format p{
   letter-spacing: 2px;
-  font-size: 90%
+  font-size: 150%
 }
 
 /*Formatierung für die Preise*/
@@ -57,7 +57,7 @@
 
 .price_format p{
   letter-spacing: 2px;
-  font-size: 90%
+  font-size: 150%
 }
 
 .name_food_format {
@@ -72,7 +72,7 @@
 
 .name_food_format p{
   letter-spacing: 2px;
-  font-size: 90%
+  font-size: 150%
 }
 
 .name_food_format_small {
@@ -87,7 +87,7 @@
 
 .name_food_format_small p{
   letter-spacing: 2px;
-  font-size: 60%
+  font-size: 100%
 }
 
 .amount_food_format {
@@ -101,7 +101,7 @@
 
 .amount_food_format p{
   letter-spacing: 2px;
-  font-size: 90%
+  font-size: 150%
 }
 
 .price_food_format {
@@ -116,7 +116,7 @@
 
 .price_food_format p{
   letter-spacing: 2px;
-  font-size: 90%
+  font-size: 150%
 }
 
 .body {
