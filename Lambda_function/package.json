@@ -1,0 +1,14 @@
+{
+  "name": "lambda_function",
+  "version": "1.0.0",
+  "description": "AWS lambda function to send emails",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Theo Kretz",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.1"
+  }
+}

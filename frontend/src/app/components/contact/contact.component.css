@@ -2,16 +2,24 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
-  justify-content: center;
+
   align-items: center;
   min-height: 70vh;
+  flex-direction: column;
+}
 
+h2, p, label, button {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 600;
 }
 
 form {
   width: 50%;
-  justify-content: space-between;
   display: flex;
+}
+
+.maps-container {
+  text-align: center;
 }
 
 .form-title {
@@ -19,7 +27,6 @@ form {
 }
 
 .headline {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +45,13 @@ form {
   align-items: center;
   width: 100%;
 }
-
+textarea {
+  resize: none;
+}
+.maps google-map {
+  height: 500px;
+  width: 900px;
+}
 
 /* Responsive Anpassung, falls die Felder auf kleineren Bildschirmen untereinander angezeigt werden sollen */
 @media (max-width: 768px) {
@@ -49,13 +62,24 @@ form {
     align-items: flex-start;
     width: 100%;
   }
-  .datencheck {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+
 
   .datencheck label {
     margin-left: 0;
+  }
+  form {
+    width: 90%;
+  }
+  .maps, google-map {
+    width: 90%;
+  }
+
+  p {
+    text-align: center;
+  }
+  .maps google-map {
+    height: 300px; /* Kleinere Höhe für kleine Bildschirme */
+    width: 90%; /* Passt sich der Breite des Containers an */
   }
 }
 
@@ -87,6 +111,21 @@ button[type="submit"]:hover {
   align-items: center;
 }
 
+#route {
+  padding: 10px 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #9CC0F9;
+  color: #0D0D0D;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+}
+
+#route:hover {
+  background-color: #182234;
+  color: white;
+}
 .datencheck {
   display: flex;
   align-items: center; /* Elemente vertikal zentrieren */
@@ -136,3 +175,9 @@ hr {
 }
 
 @keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}
+
+.maps {
+  margin-bottom: 1rem;
+
+}
+

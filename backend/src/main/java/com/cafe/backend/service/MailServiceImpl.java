@@ -55,4 +55,14 @@ public class MailServiceImpl implements MailService {
         message.setText(text);
         mailSender.send(message);
     }
+
+    public void sendEmail(String email) {
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom("mailUsername");
+        message.setTo(email);
+        message.setSubject("Bestätigung Ihrer Anfrage bei Tony's Cafe");
+        message.setText("Vielen Dank für Ihre Anfrage bei Tony's Cafe. Ihre Anfrage wird in Kürze bearbeitet.");
+        mailSender.send(message);
+    }
+
 }

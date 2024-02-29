@@ -1,0 +1,17 @@
+.arrow-container {
+    display: flex; /* Use flexbox */
+    margin: auto;
+    position: relative;
+    width: fit-content;
+    background-color: rgba(240, 248, 255, 0.386);
+    border-radius: 80px;
+    top: 75vh;
+    padding: 30px;
+    text-align: center; /* Center the icon horizontally within the container */
+  }
+  
+  
+  .fa-arrow-down {
+    color: rgb(33, 0, 56);
+    font-size: 230%;
+  }
