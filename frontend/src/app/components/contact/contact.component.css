@@ -39,6 +39,7 @@ form {
   align-items: center;
 }
 
+
 .form-first-row {
   display: flex;
   justify-content: space-between;
@@ -51,6 +52,20 @@ textarea {
 .maps google-map {
   height: 500px;
   width: 900px;
+}
+
+/* Social Media Icons */
+.socals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.fa-brands {
+  font-size: 24px;
+  color: #0D0D0D;
 }
 
 /* Responsive Anpassung, falls die Felder auf kleineren Bildschirmen untereinander angezeigt werden sollen */
