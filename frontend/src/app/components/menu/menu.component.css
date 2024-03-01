@@ -32,13 +32,12 @@
 /*Formatierung für die Speisen/Getränke*/
 .name_format {
   float: left;
-  width: 45%;
+  width: 80%;
   height: max-content;
   font-family: 'Inconsolata', monospace;
   text-align: left;
   font-weight: 600;
   margin-left: 2.5%;
-  margin-right: 2.5%;
 }
 
 .name_format p{
@@ -49,12 +48,12 @@
 /*Formatierung für die Preise*/
 .price_format {
   float: left;
-  width: 45%;
+  width: 10%;
   height: max-content;
   font-family: 'Inconsolata', monospace;
   text-align: right;
   font-weight: 600;
-  margin-right: 5%;
+  margin-left: 2.5%;
 }
 
 .price_format p{
@@ -132,20 +131,46 @@
 
 @media (max-width : 992px){
 
+  .headline_format p{
+    font-size: 85%;
+  }
+
+  .name_format p{
+    font-size: 80%;
+    max-width: 40vw;
+    height: fit-content;
+    word-wrap: break-word;
+  }
+
+  .name_format p{
+    font-size: 80%;
+    margin-top: 2px;
+  }
+
+  .price_format p{
+    font-size: 80%;
+    margin-top: 2px;
+  }
+
   .name_food_format p{
-    font-size: 50%;
+    font-size: 80%;
     max-width: 40vw;
     height: fit-content;
     word-wrap: break-word;
   }
 
   .amount_food_format p{
-    font-size: 40%;
+    font-size: 80%;
     margin-top: 2px;
   }
 
   .price_food_format p{
-    font-size: 40%;
+    font-size: 80%;
+    margin-top: 2px;
+  }
+
+  .name_food_format_small p{
+    font-size: 70%;
     margin-top: 2px;
   }
 }
