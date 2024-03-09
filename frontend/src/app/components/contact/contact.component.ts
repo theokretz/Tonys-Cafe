@@ -65,7 +65,7 @@ export class ContactComponent {
           this.isLoading = false;
         },
         error: error => {
-          console.error('Could not send email', error);
+          console.error('Could not send email!', error);
           this.notification.error('Versuchen Sie es später erneut', 'Nachricht konnte nicht gesendet werden', error.error.errors);
           this.isLoading = false;
         }
