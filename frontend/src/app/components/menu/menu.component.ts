@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-menu',
   standalone: true,
@@ -9,4 +10,5 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
   title = "Speisekarte";
+
 }

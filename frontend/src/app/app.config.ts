@@ -12,7 +12,6 @@ import { GoogleMapsModule  } from '@angular/google-maps';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes),
-    importProvidersFrom(RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})),
     importProvidersFrom(HttpClientModule),
     importProvidersFrom(ToastrModule.forRoot({
       timeOut: 3000,
@@ -25,5 +24,5 @@ export const appConfig: ApplicationConfig = {
       importProvidersFrom(BrowserAnimationsModule),
       importProvidersFrom(LightgalleryModule),
       importProvidersFrom(GoogleMapsModule),
-  ]
+  ],
 };
