@@ -1,10 +1,41 @@
-<header>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">Über uns</a></li>
-            <li><a href="/contact">Kontakt</a></li>
-        </ul>
-    </nav>
+
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+<header class="masthead">
+  <nav class="navbar navbar-expand-lg shadow fixed-top">
+      <div class="container">
+          <div class="d-flex justify-content-between align-items-center w-100">
+              <a class="navbar-brand" href="#">
+                  <img src="../../../assets/images/1_FULL_LOGO_Cafe&Konditorei.png" alt="Logo" class="fit-img">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="border-radius: 0px;">
+                  <span class="navbar-toggler-icon" style="border-radius: 0px;"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link hoverable-text" href="/">Home</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link hoverable-text" href="/speisekarte">Speisekarte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hoverable-text" href="/galerie">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hoverable-text" href="/überuns">Über uns</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hoverable-text" href="/kontakt">Kontakt</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <app-scroll-button></app-scroll-button>
+
 </header>
+
 

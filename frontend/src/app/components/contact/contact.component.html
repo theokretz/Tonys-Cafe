@@ -1,1 +1,95 @@
-<p>contact works!</p>
+<div class = "form-container">
+
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <div class="form-group">
+        <h2 class="headline">Kontaktieren Sie uns!</h2>
+
+        <p class="subline">Gerne nehmen wir Ihre Reservierung oder sonstige Anfragen entgegen.</p>
+        <div class = "socals">
+            <a href = "https://www.instagram.com/tonys.cafe3512?igsh=Zzhxa2oyZDNocWRh"><i class="fa-brands fa-instagram"></i></a>
+            <a href = "https://www.facebook.com/people/Tonys-Caf%C3%A9/61551396421010/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@tonys_cafe?_t=8jk1os2JKfQ&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="form-first-row">
+            <div class = "form-title">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" [(ngModel)]="email.name" name ="name"  #name="ngModel"  required>
+            </div>
+                <div
+                        *ngIf="name.invalid && (name.dirty || form.submitted)"
+                        class="alert"
+                >
+                <div *ngIf="name.errors?.['required']">Bitte geben Sie Ihren Namen ein.</div>
+                </div>
+            <div class = "form-title">
+                <label for="email">E-Mail Adresse</label>
+                <input type="email" class="form-control" id="email" [(ngModel)]="email.email" name="email"  #emailAddress="ngModel"  required email>
+            </div>
+            <div
+                    *ngIf="emailAddress.invalid && (form.submitted)"
+                    class="alert"
+            >
+                <div *ngIf="emailAddress.errors?.['required']">Bitte geben Sie Ihre E-Mail Adresse ein.</div>
+                <div *ngIf="emailAddress.errors?.['email']">Bitte geben Sie eine gültige E-Mail Adresse ein.</div>
+            </div>
+        </div>
+        <div class = "nachricht-eingabe">
+            <label for="nachricht">Nachricht</label>
+            <textarea class="form-control" id="nachricht" [(ngModel)]="email.message" name ="message"  #nachricht="ngModel" rows="3" required></textarea>
+            <div
+                    *ngIf="nachricht.invalid && (nachricht.dirty || form.submitted)"
+                    class="alert"
+            >
+                <div *ngIf="nachricht.errors?.['required']">Bitte geben Sie Ihre Nachricht ein.</div>
+            </div>
+        </div>
+        <div class = "datencheck">
+            <input type="checkbox" id="datenschutz" name="datenschutz" ngModel #datenschutz="ngModel" required />
+            <label for="datenschutz">Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage erhoben
+                und verarbeitet werden. Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an <a href="mailto:office@cafe-tonys.at">Tony's Cafe</a> widerrufen.
+                Details finden Sie <a [routerLink]="['/datenschutz']">hier</a>.
+            </label>
+        </div>
+            <div
+                    *ngIf="datenschutz.invalid && (datenschutz.dirty || form.submitted)"
+                    class="alert"
+            >
+                <div *ngIf="datenschutz.errors?.['required']">Bitte akzeptieren Sie die Datenschutzerklärung.</div>
+            </div>
+
+        <div class="senden" *ngIf="!isLoading">
+            <button type="submit" class="btn btn-primary">Senden <i class="bi bi-send-fill"></i></button>
+        </div>
+        <div class="loader-container" *ngIf="isLoading">
+            <div  class="loader"></div>
+        </div>
+        <hr>
+    </div>
+</form>
+    <div class="maps-container">
+        <h2 class="headline">Oder kommen Sie einfach vorbei!</h2>
+        <p>Hier befindet sich Tony's Cafe.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=48.39395386803803%2C15.577857720236125&query_place_id=ChIJFdHYpOmFckcReitAOneMwOg">
+            <button class="btn btn-primary" id="route">Route <i class="bi bi-geo-alt-fill"></i></button>
+        </a>
+        <div class="maps">
+        <google-map height="500px"
+                    width="900px"
+                    [center]="center"
+                    [zoom]="zoom"
+                    (mapClick)="moveMap($event)"
+        >
+            <map-marker
+                    [position]="marker.position"
+                    [options]="marker.options"
+                    [title]="marker.title"
+            >
+
+            </map-marker>
+        </google-map>
+        </div>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,176 @@
+/*Formatierung für die Speisekarten*/
+.column_container {
+  padding: 10px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 600;
+  border: 1px solid black;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  overflow: auto
+}
+
+/*Formatierung für die Arten von Speisen/Getränken*/
+.headline_format {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 6px;
+  letter-spacing: 2px;
+  font-size: 200%
+}
+
+.container-fluid{
+  padding: 0px;
+  margin: 0px;
+}
+
+.row{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Formatierung für die Speisen/Getränke*/
+.name_format {
+  float: left;
+  width: 80%;
+  height: max-content;
+  font-family: 'Inconsolata', monospace;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 2.5%;
+}
+
+.name_format p{
+  letter-spacing: 2px;
+  font-size: 150%
+}
+
+/*Formatierung für die Preise*/
+.price_format {
+  float: left;
+  width: 10%;
+  height: max-content;
+  font-family: 'Inconsolata', monospace;
+  text-align: right;
+  font-weight: 600;
+  margin-left: 2.5%;
+}
+
+.price_format p{
+  letter-spacing: 2px;
+  font-size: 150%
+}
+
+.name_food_format {
+  float: left;
+  width: 67.5%;
+  height: max-content;
+  font-family: 'Inconsolata', monospace;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 2.5%;
+}
+
+.name_food_format p{
+  letter-spacing: 2px;
+  font-size: 150%
+}
+
+.name_food_format_small {
+  float: left;
+  width: 67.5%;
+  height: max-content;
+  font-family: 'Inconsolata', monospace;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 2.5%;
+}
+
+.name_food_format_small p{
+  letter-spacing: 2px;
+  font-size: 100%
+}
+
+.amount_food_format {
+  float: left;
+  width: 12.5%;
+  height: max-content;
+  font-family: 'Inconsolata', monospace;
+  text-align: left;
+  font-weight: 600;
+}
+
+.amount_food_format p{
+  letter-spacing: 2px;
+  font-size: 150%
+}
+
+.price_food_format {
+  float: left;
+  width: 10%;
+  height: max-content;
+  font-family: 'Inconsolata', monospace;
+  text-align: right;
+  font-weight: 600;
+  margin-left: 2.5%;
+}
+
+.price_food_format p{
+  letter-spacing: 2px;
+  font-size: 150%
+}
+
+.body {
+  margin: 0px;
+  padding: 0px;
+  background-color: beige;
+  height: auto;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@media (max-width : 992px){
+
+  .headline_format p{
+    font-size: 85%;
+  }
+
+  .name_format p{
+    font-size: 80%;
+    max-width: 40vw;
+    height: fit-content;
+    word-wrap: break-word;
+  }
+
+  .name_format p{
+    font-size: 80%;
+    margin-top: 2px;
+  }
+
+  .price_format p{
+    font-size: 80%;
+    margin-top: 2px;
+  }
+
+  .name_food_format p{
+    font-size: 80%;
+    max-width: 40vw;
+    height: fit-content;
+    word-wrap: break-word;
+  }
+
+  .amount_food_format p{
+    font-size: 80%;
+    margin-top: 2px;
+  }
+
+  .price_food_format p{
+    font-size: 80%;
+    margin-top: 2px;
+  }
+
+  .name_food_format_small p{
+    font-size: 70%;
+    margin-top: 2px;
+  }
+}
